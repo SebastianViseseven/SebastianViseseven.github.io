@@ -1,0 +1,660 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: LavanderiaRegular; /* Гарнитура шрифта */
+    src: url(../fonts/LavanderiaRegular.ttf); /* Путь к файлу со шрифтом */
+  }
+@font-face {
+    font-family: AlteHaasGroteskBold; /* Гарнитура шрифта */
+    src: url(../fonts/AlteHaasGroteskBold.ttf); /* Путь к файлу со шрифтом */
+   }
+ @font-face {
+   font-family: UniversLTLight; /* Гарнитура шрифта */
+   src: url(../fonts/UniversLTLight.ttf); /* Путь к файлу со шрифтом */
+   }
+
+
+html{
+height: 100%;
+font-size: 100%;
+}
+
+body{
+  margin:0;
+  padding:0;
+font: 14px/18px 'Open Sans',Arial,Tahoma;
+background:white;
+
+}
+
+/*Свойства width и height включают в себя
+ значения полей и границ, но не отступов (margin).*/
+*{
+  margin:0;
+  padding:0;
+  outline:none;
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; /*Firefox 1-3*/
+  -webkit-box-sizing: border-box; /* Safari */
+}
+
+#wrapper{
+  max-width: 1280px;
+  /*background-color: green;*/  
+  margin: 0 auto;
+}
+
+.h-main{
+display: inline-block;
+height:20%;
+width:100%;
+}
+
+.h-main img{
+  height:auto;
+  width: 100%;
+}
+
+
+
+
+
+
+header{
+  height:85px;
+  width: 100%;
+  position:fixed;
+  
+  background-color: rgba(255,255,255, 0.9);
+  -webkit-box-shadow: 0 0 5px  rgba(123,123,123, 0.11) ;
+           box-shadow: 0 0 5px  rgba(123,123,123, 0.11) ;
+}
+.logo{
+display: block;
+float:left;
+font-family: LavanderiaRegular, cursive;
+font-size: 41px;
+padding-top:25px;
+padding-left:13%;
+}
+.logo a{
+  color:#000000;
+  text-decoration: none;
+}
+.logo span{
+  color:#B73958;
+}
+
+.nav{
+  margin-right: 14%;
+  margin-top: 43px;
+  float:right;
+}
+.nav li{
+  float:left;
+}
+
+.nav li a,#touch-menu
+{
+  
+  font-family: Segoe UI;
+  font-size: 17px;
+  display: block;
+  color: #8C8C8C;
+
+  padding: 0 0;
+  padding-bottom: 3px;
+  padding-right: 10px;
+  margin-right:30px;
+}
+
+.nav li:last-child a{
+color:white;
+    
+    background-color:#DE6D6E;
+    border-radius: 3px;
+	margin-right:0px;
+  margin-top: -3px;
+}
+
+  .nav li:last-child a:hover{
+    background-color: #DB0C05;
+    text-decoration: none;
+  }
+
+i.h-login{
+  display:inline-block;
+  background:url(../img/shape.png) no-repeat;
+  height:20px;
+  width:20px;
+  margin-right:5px;
+}
+
+.nav li a:hover,
+#touch-menu:hover{
+  background-color: none;
+  text-decoration: underline;
+}
+
+#touch-menu{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.panel1{
+    display: inline-block;
+    height:auto;
+    width:100%;
+    padding-bottom: 50px;
+    /* background-color:red; */
+   
+    
+   
+    -webkit-box-shadow: 0px 5px 3px -3px rgba(52, 52, 52, 0.11);
+    -moz-box-shadow:    0px 5px 3px -3px rgba(52, 52, 52, 0.11);
+    box-shadow:         0px 5px 3px -3px rgba(52, 52, 52, 0.11);
+
+}
+
+.panel1 h1{
+  font-family: UniversLTLight;
+  color:#404040;
+  font-size: 35px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.panel1 p{
+  font-family: UniversLTLight;
+  padding-top: 10px;
+  color:#404040;
+  font-size: 17px;
+  text-align: center;
+  -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+}
+
+
+.circles{
+   display: inline-block;
+   text-align: center;
+   width: 100%;
+   height: auto;
+   
+
+}
+
+
+
+
+.circle{
+  display: inline-block;
+  height:180px;
+  width:180px;
+  border-radius: 100%;
+  margin-right: 2.93%;
+  margin-left: 2.93%;
+  margin-top: 70px;
+  vertical-align: bottom; /* Дуже потрібно, аби блок не зміщувався при
+  добавлянні тексту і інших блоків всередину*/
+}
+.circle h1{
+  font-size: 17px;
+  text-align: center;
+  margin-top: 10px;
+  color:white;
+  font-family: UniversLTLight;
+}
+
+.tickets{
+  background-color: #4EB9F4;
+  
+}
+.tickets .i-tickets{
+  display:block;
+  background: url("../img/circles-sprite.png") no-repeat;
+  height:90px;
+  width:90px;
+  margin:0 auto;
+  margin-top: 30px;
+  
+  background-position:-40px 0;
+}
+
+.camera{
+  background-color: #6FC125;
+}
+.camera .i-camera{
+  display:block;
+  background: url("../img/circles-sprite.png") no-repeat;
+  height:90px;
+  width:90px;
+  margin:0 auto;
+  margin-top: 30px;
+  
+  background-position: -175px 5px;
+}
+
+.beer{
+  background-color: #FF5649;
+}
+.beer .i-beer{
+  display:block;
+  background: url("../img/circles-sprite.png") no-repeat;
+  height:90px;
+  width:130px;
+  margin:0 auto;
+  margin-top: 30px;
+  background-position: -20px -140px;
+}
+.beer h1{
+  font-size: 17px;
+  text-align: center;
+  margin-top: 10px;
+  color:rgba(255,255,255, 0.26);
+}
+
+
+
+.i-beer p{
+    padding-top:15px;
+    color:white;
+   font-size: 12px;
+   font-family: UniversLTLight;
+   padding-top: -5px;
+   line-height: 1.2;
+   font-style: normal;
+   padding-right: 4px;
+}
+
+
+.devices{
+  background-color: #E48F23;
+}
+
+.devices .i-devices{
+  display:block;
+  background: url("../img/circles-sprite.png") no-repeat;
+  height:90px;
+  width:90px;
+  margin:0 auto;
+  margin-top: 30px;
+  
+  background-position: -175px -140px;
+}
+
+
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/
+
+.panel2{
+    display: inline-block;
+    height:auto;
+    width:100%;
+    text-align: center;
+    
+  }
+
+
+   .Anons{
+    display: inline-block;
+    height:auto;
+    width:80.079%;
+    margin-top:40px;
+    margin-bottom: 40px; 
+    padding-left: 5.08%;
+
+    
+   }
+
+
+  .i-anons{
+  display:inline-block;
+  background: url("../img/anons.png") no-repeat;
+  height:135px;
+  width:200px;
+  background-position: 0px 0px;
+  vertical-align: top;
+  float:left;
+  margin-right: 25px;
+  }
+
+  .t-anons{
+  display:inline-block;
+  height:auto;
+  width:58%;
+  vertical-align: bottom;
+ 
+  }
+
+  .Anons h1{
+    text-align: left;
+    font-family: UniversLTLight;
+  margin-top: 0px;
+  }
+
+  .Anons p{
+    font-family: UniversLTLight;
+    font-size: 15px;
+    text-align: justify;
+    /*переноси слів*/
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/
+
+ .footer{
+display: inline-block;
+height:auto;
+width:100%;
+background: url(../img/footer.png) ;
+text-align: center;
+margin-top: 20px;
+  }
+
+
+
+.footer-t{
+   display: inline-block;
+    height:auto;
+    width:120px;
+   margin-top: 40px;
+   padding-bottom:40px;
+   text-align: left;
+  
+  }
+
+  .footer-t1{
+   margin-right: 3.125%;
+   margin-left: 7.8%;
+  }
+   .footer-t2{
+    margin-left: 3.125%;
+   margin-right: 2.34%;
+   
+  }
+   .footer-t3{
+    margin-left: 2.34%;
+   margin-right: 1.9%;
+  
+  }
+   .footer-t4{
+   margin-left: 1.9%;
+   margin-right: 0.6%;
+   
+  }
+
+  .footer-t5{
+   display: inline-block;
+    height:110px;
+    width:295px;
+   
+   margin-top: 55px;
+   margin-left:0.6%;
+   vertical-align: top;
+  
+  }
+
+  .footer-t h1{
+    color:#929292;
+   margin-top: 0px;
+   margin-bottom: 15px;
+   font-size: 21px;
+   font-family: UniversLTLight;
+  }
+
+ .footer-t ul{
+  margin:0;
+  padding:0;
+  padding-left: 5px;
+  }
+
+   .footer-t ul li {
+    
+  list-style: none;
+  }
+
+  .footer-t ul li a{
+    font-size: 15px;
+    font-family: UniversLTLight;
+    color:#8B8B8B;
+    line-height: 1.4;
+  }
+
+.f-ball{
+  display: inline-block;
+  margin-right: 20px;
+    height:55px;
+    width:55px;
+   background-color: rgba(105,107,106, 1);
+   border-radius: 100%;
+}
+
+.f-last{
+  margin-right: 0;
+}
+
+.footer-t5 p{
+  margin-top: 15px;
+  font-size: 15px;
+  font-family: UniversLTLight;
+  color:#8B8B8B;
+}
+
+.f-i{
+  display:block;
+  background: url("../img/footer-sprite.png") no-repeat;
+  height:35px;
+  width:40px;
+  margin:0 auto;
+  margin-top: 10px;
+}
+.i-facebook{
+  background-position: -5px -12px;
+}
+.i-twitter{
+  background-position: -38px -12px;
+}
+.i-ball{
+  background-position: -79px -12px;
+}
+.i-relative{
+  background-position: -122px -12px;
+}
+
+
+
+
+/**************************************************************/
+/**********************@MEDIA**********************************/
+/**************************************************************/
+@media (max-width: 1124px){
+  .footer-t{
+   margin-top: 20px;
+   padding-bottom:20px;
+  }
+   
+   .footer-t1{
+   margin-right: 2%;
+   margin-left: 1.5%;
+  }
+   .footer-t2{
+    margin-left: 2%;
+   margin-right: 1.5%;
+   
+  }
+   .footer-t3{
+    margin-left: 1.5%;
+   margin-right: 1.5%;
+  
+  }
+   .footer-t4{
+   margin-left: 1.5%;
+   margin-right: 0.5%;
+   
+  }
+
+  .footer-t5{
+   display: inline-block;
+    height:110px;
+    width:295px;
+   
+   margin-top: 25px;
+   margin-left:0.5%;
+   vertical-align: top;
+  
+  }
+
+ 
+}
+
+
+
+@media (max-width: 1024px){
+
+  header{height:70px; }
+.nav li a,#touch-menu
+{
+  
+  margin-right:12px;
+  margin-top: -10px;
+}
+.nav li:last-child a
+{
+  
+  margin-top: -13px;
+}
+
+.panel1 h1{
+  margin-top: 30px;
+}
+
+.circle{
+  margin-top: 30px;
+  margin-right: 2%;
+  margin-left: 2%;
+
+}
+   
+     .i-anons{
+  margin-right: 15px;
+  }
+  
+   .Anons{
+   
+    width:95%;
+    margin-top:20px;
+    margin-bottom: 20px; 
+    padding-left: 0%;
+   }
+
+
+
+   
+
+}
+
+
+
+
+
+
+@media (max-width: 768px){
+   header{height:50px; padding:0;}
+  .nav{
+    position: absolute;
+    top:100%; /*По висоті одразу після хедер*/
+    left:65%;
+    right:0;
+    display: none;
+  }
+  .logo{
+  padding-top:15px;
+   font-size: 30px;
+  }
+  .nav{
+    margin: 0;
+  }
+  .nav li{float:none;}
+  .nav li a,#touch-menu
+{
+    color:#666;
+    border-left: 3px solid transparent;
+    border-top: 1px solid #eee;
+    background-color: rgba(255,255,255, 0.9);
+    text-align: center;
+    margin-top: 0;
+  }
+.nav li:last-child a
+{
+  
+  margin-top: 0;
+}
+
+  .nav li:first-child a{border-top: none;}
+  .nav li a:hover{
+    
+    border-left: 3px solid #B439A6;
+    text-decoration: underline;
+  }
+  .nav li:last-child a:hover{
+    background-color: #DB0C05;
+    text-decoration: none;
+  }
+
+  .nav li a,#touch-menu
+{
+  padding: 10px 15px;
+  margin-right:0px;
+}
+  #touch-menu{
+    display: block;
+    float:right;
+    position: absolute;
+    top:0%; 
+    left:65%;
+    right:0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+  }
+  #touch-menu:hover{
+    background-color: #B439A6;
+    color:white;
+  }
+  
+  
+       .i-anons{
+  margin-right: 10px;
+  }
+     .Anons{
+    width:97%;
+    margin-top:10px;
+    margin-bottom: 10px; 
+   }
+}
